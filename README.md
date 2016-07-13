@@ -9,7 +9,7 @@ galleryByReact使用webpack进行快速项目构建
 2.本地安装了git
 
 3.安装yeoman：
-访问[http://yeoman.io/]，教会怎么使用yeoman，在Discovering generators中找到需要的模板框架
+访问[yeoman](http://yeoman.io/)，教会怎么使用yeoman，在Discovering generators中找到需要的模板框架
 
 ```
 npm install -g yo
