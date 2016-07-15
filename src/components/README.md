@@ -1,3 +1,5 @@
+##react demo
+
 后端数据的结构设计为
 
 ```bash
@@ -150,8 +152,13 @@ class AppComponent extends React.Component {
 }
 ```
 
-参考[ES5与ES6](http://www.cnblogs.com/Mrs-cc/p/4969755.html)的区别
+参考资料
 
+* [ES5与ES6](http://www.cnblogs.com/Mrs-cc/p/4969755.html)的区别
+
+* 参考materliu原图片翻转效果[demo](http://materliu.github.io/gallery-by-react/)
+
+* 本文地址[https://github.com/fugehappy/galleryByReact](https://github.com/fugehappy/galleryByReact)
 
 
 
