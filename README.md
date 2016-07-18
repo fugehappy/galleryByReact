@@ -9,38 +9,46 @@ galleryByReact使用webpack进行快速项目构建
 2.本地安装了git
 
 3.安装yeoman：
-访问[yeoman](http://yeoman.io/)，教会怎么使用yeoman，在Discovering generators中找到需要的模板框架[react-webpack](https://github.com/newtriks/generator-react-webpack/)
+访问[http://yeoman.io/](http://yeoman.io/)，可学习yeoman的使用，在Discovering generators中找到需要的模板框架[react-webpack](https://github.com/newtriks/generator-react-webpack/)
 
-```
+```bash
 npm install -g yo
 npm install -g generator-react-webpack
 ```
 4.在github上建立一个名为galleryByReact的空白项目（只有README.md和LICENSE）
 
-```
+```bash
 .galleryByReac
-├── .git       //git配置文件
 ├── LICENSE
 └── README.md
 ```
 
 5.将项目git到本地
 
-```
+```bash
 git clone git@github.com:fugehappy/galleryByReact.git
 ```
+本地目录如下
+
+```bash
+.galleryByReac
+├── .git        //git配置文件
+├── LICENSE
+└── README.md
+```
+
 6.使用yeoman快速初始化构建项目
 
-```
+```bash
 cd galleryByReact
 yo react-webpack
 ```
 7.构建成功
 
-```
+```bash
 .galleryByReac
 ├── .git
-├── cfg                  //
+├── cfg                  //配置文件
 ├── dist                 //发布的代码
 ├── src                  //开发的代码
 ├── test                 //测试
