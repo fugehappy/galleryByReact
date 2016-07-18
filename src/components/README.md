@@ -152,6 +152,13 @@ class AppComponent extends React.Component {
 }
 ```
 
+版本迭代
+
+* Main-ES5基本上是沿用ES5的标准，创建组件是用了React.createClass方式创建的，是一个独立模块
+* Main-ES6是混合了ES5和ES6的标准，创建组件既用了React.createClass的方式，又用了class AppComponent extends React.Component的方式
+* 最后按照ES6的标准，每个模块中仅仅有一个组件的方式，拆分为AppComponent和ImgFigureComponent;
+
+
 参考资料
 
 * [ES5与ES6](http://www.cnblogs.com/Mrs-cc/p/4969755.html)的区别

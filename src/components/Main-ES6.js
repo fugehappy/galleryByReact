@@ -2,7 +2,6 @@ require('normalize.css/normalize.css');
 require('styles/App.css');
 
 import React from 'react';
-import ImgFigure from './imgFigure.js';
 
 //let yeomanImage = require('../images/yeoman.png');
 /*业务所需要的数据*/
@@ -25,6 +24,31 @@ imageDatas =(function(imageDatasArr) {
   }
   return imageDatasArr;
 })(imageDatas);
+
+let ImgFigure = React.createClass ({
+  handleClick(e) {
+    this.props.inverse();
+    e.stopPropagation();
+    e.preventDefault();
+  },
+  render() {
+    let imgWrapClassName = 'img-wrap';
+        imgWrapClassName += this.props.arrange.isInverse ? ' is-inverse' : '';
+    return (
+      <figure className="img-figure">
+        <div className={imgWrapClassName} onClick={this.handleClick}>
+            <img src={this.props.data.imageURL}/>
+            <figcaption>
+              <h2 className="img-title">{this.props.data.title}</h2>
+              <div className="img-back" onClick={this.handleClick}>
+                <p>{this.props.data.desc}</p>
+              </div>
+            </figcaption>
+        </div>
+      </figure>
+    )
+  }
+})
 
 
 /*大管家  ES6*/
