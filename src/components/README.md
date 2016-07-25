@@ -2,7 +2,7 @@
 
 后端数据的结构设计为
 
-```bash
+```js
 let imageDatas = [{
   filename:'1.jpg',
   title:'Heaven of time',
@@ -16,7 +16,7 @@ let imageDatas = [{
 
 对数据进行处理，使用立即执行的匿名函数
 
-```bash
+```js
 imageDatas =(function(imageDatasArr) {
   for (var i = 0, j = imageDatasArr.length; i < j; i++) {
     var singleImageData = imageDatasArr[i];
@@ -29,7 +29,7 @@ imageDatas =(function(imageDatasArr) {
 
 组件与接口
 
-```bash
+```js
 //大管家组件
 class AppComponent extends React.Component {
   constructor(props) {
@@ -61,7 +61,7 @@ export default AppComponent;
 
 页面数据渲染
 
-```bash
+```js
 //ImgFigure组件
 let ImgFigure = React.createClass ({
   render() {
@@ -102,7 +102,7 @@ class AppComponent extends React.Component {
 处理业务，添加点击事件
 
 * 第一步改写
-```bash
+```js
 let ImgFigure = React.createClass ({
   handleClick(e) {
     alert(1);
@@ -125,7 +125,7 @@ let ImgFigure = React.createClass ({
 })
 ```
 * 第二步改写
-```bash
+```js
 let ImgFigure = React.createClass ({
   handleClick(e) {
     this.props.inverse();
