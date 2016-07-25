@@ -53,8 +53,8 @@ yo react-webpack
 ├── src                  //开发的代码
 ├── test                 //测试
 ├── .babelrc             //ES6转ES5配置
-├── .editorconfig
-├── .eslintrc            //代码检测工具
+├── .editorconfig        //编辑器编码风格统一配置
+├── .eslintrc            //代码风格检测
 ├── .gitignore 
 ├── .yo-rc.json          //yeoman配置文件
 ├── karma.conf.js        //自动化测试
