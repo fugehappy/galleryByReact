@@ -6,12 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="components/jquery.js"></script>
 </head>
 <body>
-  <div id="app">APPLICATION CONTENT</div>
-
-  <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
-  <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
-  <script type="text/javascript" src="/assets/app.js"></script>
+  <script>
+  var url = 'components/ss.json';
+  $.ajax({
+	url:url,
+	type:'GET',
+	dataType:'json',
+	success:function(data){
+		//var t = JSON.stringify(data);
+		console.log(data);
+	},
+	error:function(err){
+		if(typeof err!=undefined){
+			alert(1);
+		}
+		
+	}
+  })
+  </script>
 </body>
 </html>
